@@ -1,7 +1,7 @@
 const generateForm = document.querySelector<HTMLFormElement>('.generate-form');
 const imageGallery = document.querySelector<HTMLDivElement | any>('.image-gallery')
 
-const OPENAI_API_KEY = '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';
+const OPENAI_API_KEY = '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';
 let isImageGenerating = false; 
 
 const updateImageCard = (imgDataArray:any) => {
@@ -61,9 +61,9 @@ const handleFormSubmission = (e: Event) => {
     const imgCardMarkup = Array.from({length: userImgQuantity}, () => 
     `
     <div class="img-card loading">
-				<img src="./src/assests/loader.svg" alt="image" />
+				<img src='./src/assests/loader.svg' alt="image" />
 				<a href="#" class="download-btn">
-					<img src="./src/assests/download.svg" alt="download-icon" />
+					<img src='./src/assests/download.svg' alt="download-icon" />
 				</a>
 			</div>
     `
